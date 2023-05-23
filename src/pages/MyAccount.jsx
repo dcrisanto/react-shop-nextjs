@@ -4,7 +4,7 @@ import '@styles/MyAccount.scss';
 const MyAccount = () => {
     return (
         <div></div>
-    )
-}
+    );
+};
 
-export default MyAccount
+export default MyAccount;

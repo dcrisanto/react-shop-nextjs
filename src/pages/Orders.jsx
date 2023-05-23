@@ -6,7 +6,7 @@ const Orders = () => {
         <div>
             <Menu />
         </div>
-    )
-}
+    );
+};
 
-export default Orders
+export default Orders;

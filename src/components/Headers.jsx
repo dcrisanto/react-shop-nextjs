@@ -24,7 +24,7 @@ const Headers = () => {
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
-                <Image onClick={() => toogleMenu()} className={styles['icon-menu']} src={iconMenu} />
+                <Image onClick={() => toogleMenu()} className={styles['icon-menu']} src={iconMenu} alt="icon-menu" />
                 <div className={styles['nav-left-secction']}>
                     <Logo />
                     <Navbar />
@@ -34,7 +34,7 @@ const Headers = () => {
                         {!loggedIn && <li className={styles['item-sign-in']}> Sign in</li>}
                         {loggedIn && <li className={styles['item-email']} onClick={() => toogleMenu()}>dorelly.crisanto@gmail.com</li>}
                         <li className={styles['item-cart']} onClick={() => toogleOrder()}>
-                            <Image className={styles['icon-shopping-notification']} src={iconShopping} />
+                            <Image className={styles['icon-shopping-notification']} src={iconShopping} alt="icon-shopping-notification" />
                             {state.cart.length > 0 ? <div>{state.cart.length}</div> :null}
                         </li>
                     </ul>
@@ -44,7 +44,7 @@ const Headers = () => {
             {state.menuIsOpen && <Menu />}
             {state.orderIsOpen && <MyOrder />}
         </header>
-    )
-}
+    );
+};
 
-export default Headers
+export default Headers;

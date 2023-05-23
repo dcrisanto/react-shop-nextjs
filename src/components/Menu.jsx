@@ -27,14 +27,14 @@ const Menu = () => {
             </ul>
             <div className={styles['container-signout']}>
                 <p>dorelly.crisanto@gmail.com</p>
-                <a className={styles['signout']} href="">Sign out</a>
+                <a className={styles['signout']} href="/">Sign out</a>
             </div>
         </div>
         <div className={styles['container-access-login']}>
-                <a className={styles.login} href="">Log in</a>
+                <a className={styles.login} href="/">Log in</a>
         </div>
     </section>
-    )
-}
+    );
+};
 
-export default Menu
+export default Menu;

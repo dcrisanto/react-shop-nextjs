@@ -3,9 +3,9 @@ import styles from "@styles/ItemNavbar.module.scss";
 
 const ItemNavbar = ({item}) => {
   return (
-    <a className={styles['item-navbar']} href="">{item.name}</a>
+    <a className={styles['item-navbar']} href="/">{item.name}</a>
   );
-}
+};
 
-export default ItemNavbar
+export default ItemNavbar;
 

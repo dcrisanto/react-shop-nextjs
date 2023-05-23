@@ -7,15 +7,13 @@ import styles from '@styles/MyOrder.module.scss';
 import flecha from '@icons/flecha.svg';
 import shopping from '@icons/icon_shopping_cart.svg';
 
-let result = 0;
-
 const MyOrder = () => {
     const { state } = useContext(AppContext);
     const sumTotal = () => {
         const reducer = (accumulator, currentValue) => accumulator + currentValue.price;
         const sum = state.cart.reduce(reducer, 0);
         return sum;
-    }
+    };
   
     return (
         <aside className={styles['my-order-aside']}>
@@ -26,7 +24,7 @@ const MyOrder = () => {
                         <h1>Shopping cart</h1>
                     </div>
                     {state.cart.map((item) => {
-                        return <OrderItem product={item} key={`orderItem-${item.id}`} />
+                        return <OrderItem product={item} key={`orderItem-${item.id}`} />;
                     })}
                     <div className={styles.total}>
                         <p>Total</p>
@@ -40,12 +38,12 @@ const MyOrder = () => {
                 </section>
             ) : (
                 <section className={styles['no-order-section']}>
-                    <Image src={shopping} />
+                    <Image src={shopping} alt="image-shopping" />
                     <h2>Tu Carro está vacío</h2>
                 </section>
             )}
         </aside>
-    )
-}
+    );
+};
 
-export default MyOrder
+export default MyOrder;

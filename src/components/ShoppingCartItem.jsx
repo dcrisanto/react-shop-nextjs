@@ -14,7 +14,7 @@ const ShoppingCartItem = () => {
                     <p>X</p>
                 </div>
         </div>
-    )
-}
+    );
+};
 
-export default ShoppingCartItem
+export default ShoppingCartItem;

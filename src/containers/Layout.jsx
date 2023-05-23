@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Headers from '@components/Headers';
+import Search from '@components/Search';
 
 //recibirá un hijo(chidren)
 const Layout = ({children}) => {
@@ -8,9 +10,9 @@ const Layout = ({children}) => {
       <Search />
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
 
 

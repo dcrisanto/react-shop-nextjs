@@ -1,8 +1,6 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Image from 'next/image';
-import AppContext from '@context/AppContext';
 import styles from '@styles/OrderItem.module.scss';
-import imageProduct from '@imgs/round_shelf.svg';
 
 const OrderItem = ({product}) => {
     /* const { removeFromCart } = useContext(AppContext);
@@ -14,7 +12,7 @@ const OrderItem = ({product}) => {
     return (
         <div className={styles['order-item']}>
             <div className={styles['product-info']}>
-                <Image src={product?.images[0]} width={250} height={250} />
+                <Image src={product?.images[0]} width={250} height={250} alt={product?.title} />
                 <p>{product?.title}</p>
             </div>
             <div className={styles['product-price']}>
@@ -23,7 +21,7 @@ const OrderItem = ({product}) => {
                 <p>X</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default OrderItem
+export default OrderItem;

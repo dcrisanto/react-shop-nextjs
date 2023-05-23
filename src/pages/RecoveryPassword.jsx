@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import '@styles/RecoveryPassword.scss';
 import logo from '@imgs/logo_yard_sale.svg';
 
@@ -6,7 +7,7 @@ const RecoveryPassword = () => {
     return (
         <section className="recovery-password-section">
             <div className="container-logo">
-                <img src={logo} />
+                <Image src={logo} alt="logo" />
             </div>
             <div className="main-container-title">
                 <h2>Password recovery</h2>
@@ -23,7 +24,7 @@ const RecoveryPassword = () => {
                 </form>
             </section>
         </section>
-    )
-}
+    );
+};
 
-export default RecoveryPassword
+export default RecoveryPassword;

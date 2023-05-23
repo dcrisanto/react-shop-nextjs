@@ -24,7 +24,7 @@ const ProductDetail = () => {
                <ProductInfo />
             </section>
         </aside>
-    )
-}
+    );
+};
 
-export default ProductDetail
+export default ProductDetail;

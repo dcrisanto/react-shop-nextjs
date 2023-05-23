@@ -8,10 +8,10 @@ const Logo = () => {
   return (
     <div className={styles['logo-container']}>
       <Link href="/">
-        <Image src={logo} />
+        <Image src={logo} alt="logo" />
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

@@ -10,10 +10,10 @@ const Order = () => {
                 </div>
                 <div className="products-price">
                     <p>$ 120,00</p>
-                    <p>></p>
+                    <p>{'>'}</p>
                 </div>
         </div>
-    )
-}
+    );
+};
 
-export default Order
+export default Order;

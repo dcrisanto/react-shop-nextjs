@@ -6,7 +6,7 @@ const Search = () => {
         <section className={styles['search-secction']}>
             <input className={styles['input-search']} type="text" placeholder="Search product" />
         </section>
-    )
-}
+    );
+};
 
-export default Search
+export default Search;

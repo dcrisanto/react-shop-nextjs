@@ -32,7 +32,7 @@ const initialMenu = [
 ];
 
 const Navbar = () => {
-  const [menu, setMenu] = useState(initialMenu);
+  const [menu] = useState(initialMenu);
 
   return (
     <ul className={styles['list-categories']}>
@@ -42,7 +42,7 @@ const Navbar = () => {
           })}
         </li>
     </ul>
-  )
-}
+  );
+};
 
-export default Navbar 
+export default Navbar;

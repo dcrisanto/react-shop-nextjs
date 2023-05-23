@@ -25,7 +25,7 @@ const CreateAccount = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default CreateAccount
+export default CreateAccount;

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import '@styles/NewPassword.scss';
 import logo from '@imgs/logo_yard_sale.svg';
 
@@ -6,7 +7,7 @@ const NewPassword = () => {
     return (
         <section className="new-password-section">
             <div className="container-logo">
-                <img src={logo} />
+                <Image src={logo} alt="logo" />
             </div>
             <div className="container-title">
                 <h1>Create a new password</h1>
@@ -28,7 +29,7 @@ const NewPassword = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default NewPassword
+export default NewPassword;

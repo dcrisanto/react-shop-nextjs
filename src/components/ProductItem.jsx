@@ -2,14 +2,13 @@ import React, { useContext } from 'react';
 import Image from 'next/image';
 import AppContext from '@context/AppContext';
 import styles from '@styles/ProductItem.module.scss';
-import imageProduct from '@imgs/round_shelf.svg';
 import buttonAddToCart from '@icons/bt_add_to_cart.svg';
 
 const ProductItem = ({product}) => {
     const { addToCart } = useContext(AppContext); 
     const handleClick = (item) => {
-        addToCart(item)
-    }
+        addToCart(item);
+    };
 
     return (
         <div className={styles['product-item']}>
@@ -19,10 +18,10 @@ const ProductItem = ({product}) => {
                     <p>${product.price}</p>
                     <p>{product.title}</p>
                 </div>
-                <Image onClick = {() => handleClick(product)} src={buttonAddToCart} />
+                <Image onClick = {() => handleClick(product)} src={buttonAddToCart} alt="icon-add-cart" />
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ProductItem
+export default ProductItem;

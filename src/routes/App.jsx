@@ -37,7 +37,7 @@ const App = () => {
             </HashRouter>
         </AppContext.Provider>
     );
-}
+};
 
-export default App
+export default App;
 
