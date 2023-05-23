@@ -13,15 +13,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <AppContext.Provider value={initialState}>
-          <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+          <Script async src="https://www.googletagmanager.com/gtag/js?id=G-4LQ558FV6R"
         strategy="afterInteractive" />
           <Script id="google-analytics" strategy="afterInteractive">
             {`
               window.dataLayer = window.dataLayer || [];
-              function gtag(){window.dataLayer.push(arguments);}
+              function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-
-              gtag('config', 'GA_MEASUREMENT_ID');
+  
+              gtag('config', 'G-4LQ558FV6R');
             `}
           </Script>
           <Headers />
